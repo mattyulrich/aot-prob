@@ -1,0 +1,14 @@
+(boot (startup))
+
+(require '[aot-prob.core :refer [build-message]]
+         '[protobuf.core :as protobuf])
+
+(import Test$TestMessage)
+
+(def m1 (build-message "Testing 123"))
+
+(def b1 (protobuf/->bytes m1))
+
+(def m2 (protobuf/create Test$TestMessage b1))
+
+(println m2)

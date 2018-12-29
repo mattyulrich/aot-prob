@@ -1,0 +1,5 @@
+{:deps
+ {
+  mattyulrich/protobuf {:git/url "https://github.com/mattyulrich/protobuf.git" :sha "6bf8ef7bc3d4f7d76c65262842c2d40023b256b4"}
+  }
+ :paths ["src/clj" "protos"]}

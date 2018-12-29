@@ -1,0 +1,4 @@
+message TestMessage {
+        required int64 timestamp = 1;
+        required string message = 2;
+}
